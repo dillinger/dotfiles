@@ -49,7 +49,7 @@ PATH="$PATH:$HOME/.bin";
 PATH="$PATH:$HOME/.my_bin";
 
 # CDPATH ALTERATIONS
-CDPATH=.:$HOME:$HOME/code:$HOME/Desktop
+CDPATH=.:$HOME:$HOME/Workspace:$HOME/Desktop
 
 # Custom Aliases
 alias c="code .";
@@ -60,14 +60,11 @@ alias pg="echo 'Pinging Google' && ping www.google.com";
 alias vb="vim ~/.bash_profile";
 alias sb="source ~/.bash_profile";
 alias de="cd ~/Desktop";
-alias d="cd ~/code";
+alias wd="cd ~/Workspace";
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias deleteDSFiles="find . -name '.DS_Store' -type f -delete"
-alias kcd-oss="npx -p yo -p generator-kcd-oss -c 'yo kcd-oss'";
-function crapp { cp -R ~/.crapp "$@"; }
 alias npm-update="npx npm-check -u";
-alias lt="pushd ~/code/love-texts && serve || popd";
 alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
 ## git aliases
